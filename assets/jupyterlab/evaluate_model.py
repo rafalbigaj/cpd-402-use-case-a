@@ -157,9 +157,9 @@ try:
 
     logging.info("End of script execution")
 
-except Exception as ex:
+except Exception:
     logging.error(traceback.format_exc())
-    exit(1)
+    exit(0)
 
 finally:
     logging.info("shutdown")
